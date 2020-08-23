@@ -23,6 +23,9 @@ int main(int argc, char *argv[])
 {
         KM_BBB_GPIO_Init();   //Switches, LED, Buzzer Initalization
         KM_LCD_Init();
+	KM_GPIO_Write(9,1);
+        sleep(2);
+        KM_GPIO_Write(9,0);
 	LCD_Testcase();
 
 
